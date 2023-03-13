@@ -16,7 +16,7 @@ This bash script is designed to download fastq data from the Gene Expression Omn
 * `-p`: (optional) flag to indicate paired-end sequencing. If this flag is provided, the script will download the paired-end fastq data. If this flag is not provided, the script will download the single-end fastq data.
 * `accession_list`: file containing a list of accession numbers, one per line. This file is required.
 * `output_directory`: directory where you want to save the fastq files. This directory is required. If the directory does not exist, the script will create it.
-* 
+
 ### Here is an example command to run the script:
 `./download_data.sh -p accession_list.txt /path/to/output/directory`
 
