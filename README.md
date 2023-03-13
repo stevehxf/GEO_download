@@ -36,6 +36,5 @@ For each accession number, the script will create two fastq files if the data is
 If you encounter any issues while running the script, here are some potential troubleshooting steps:
 
 * **Accession list file not found**: Check that the accession list file is located in the specified directory and that the file name is correct. If the file name or location is incorrect, update the command to point to the correct file.
-* **Output directory not found**: Check that the specified output directory exists and that you have permission to write to the directory. If the directory does not exist, create it manually or use the -p flag to create the directory automatically.
 * **SRA toolkit not installed**: Make sure that the SRA toolkit is installed on your system and that the fastq-dump command is available in your terminal. If the command is not available, you may need to install the SRA toolkit or update your system's PATH variable.
 * **Download errors**: If the script encounters an error while downloading the fastq data, it may fail to download some or all of the data. Check the error message for more information on the cause of the error. You can also try re-running the script or downloading the data manually from the GEO database.
