@@ -2,14 +2,15 @@
 
 # usage function
 function usage {
-    echo "Usage: $0 [-p] accession_list"
+    echo "Usage: $0 [-p] accession_list output_directory"
     echo "  -p: flag to indicate paired-end sequencing (optional)"
     echo "  accession_list: file containing a list of accession numbers, one per line"
+    echo "  output_directory: directory where you want to save the fastq files"
     exit 1
 }
 
 # check if the correct number of arguments was provided
-if [ $# -lt 1 ]; then
+if [ $# -lt 2 ]; then
     usage
 fi
 
@@ -48,8 +49,21 @@ if [ ! -f "$accessions_file" ]; then
     exit 1
 fi
 
-# change to directory where you want to save the data
-cd /path/to/data/directory/
+# set the output directory to the second positional parameter
+output_dir=$2
+
+# check if the output directory was provided
+if [ -z "$output_dir" ]; then
+    usage
+fi
+
+# check if the output directory exists, if not create it
+if [ ! -d "$output_dir" ]; then
+    mkdir -p "$output_dir"
+fi
+
+# change to output directory
+cd "$output_dir"
 
 # loop through each accession number in the file and download the fastq data
 while read accession_number; do
