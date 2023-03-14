@@ -21,7 +21,7 @@ This bash script is designed to download fastq data from the Gene Expression Omn
 * `output_directory`: directory where you want to save the fastq files. This directory is required. If the directory does not exist, the script will create it.
 
 ### Here is an example command to run the script:
-`./download_data.sh -p accession_list.txt /path/to/output/directory`
+`bash ./download_data.sh -p accession_list.txt /path/to/output/directory`
 
 This command will download the paired-end fastq data for each accession number in the file `accession_list.txt`, gzip the output fastq files, and save the data to the `/path/to/output/directory` directory.
 
