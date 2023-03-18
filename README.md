@@ -3,7 +3,7 @@
 
 ## Purpose
 
-This bash script is designed to download fastq data from the Gene Expression Omnibus (GEO) database for a list of accession numbers. The script uses the SRA toolkit's `fastq-dum` command to download the raw fastq data for each accession number in the list. The script can handle both single-end and paired-end sequencing data. The output fastq files are gzipped.
+This bash script is designed to download fastq data from the Gene Expression Omnibus (GEO) database for a list of accession numbers. The script uses the SRA toolkit's `fastq-dump` command to download the raw fastq data for each accession number in the list. The script can handle both single-end and paired-end sequencing data. The output fastq files are gzipped.
 
 ## Usage
 
