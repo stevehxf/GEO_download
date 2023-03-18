@@ -1,4 +1,4 @@
-# Bash Script for Downloading Next Generation Sequencing (NGS) Data from the GEO Database 
+# Bash Script for Downloading raw data from the GEO database 
 
 
 ## Purpose
